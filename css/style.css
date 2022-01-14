@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;1,200;1,300&family=Poppins:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,600&display=swap');
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+
+}
+
+
+
+/*MENU*/
+
+#menu li > a {
+font-size: 18px;
+font-weight: bold;
+color: #3f3f3f;
+
+
+}
+#menu form > button{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+
+/*SLIDER IMAGENES*/
+.carousel-inner{
+    max-height: 700px;
+}
+
+
+/*Seccion equipo Miami*/
+
+#numeros-locales div{
+    padding: 0 20px 0 0;
+    height: 48px;
+
+
+}
+#numeros-locales div:not(:last-child) {
+    border-right:  2px solid  #3f3f3f;
+   
+    
+}
+#numeros-locales div:not(:first-child){
+    padding-left: 20px;
+}
+
+
+#numeros-locales p{
+    margin: 0;
+    
+}
+
+
+
+/*SECCION DE NUESTRO EQUIPO*/
+
+
+/*Mapa*/
+.mapa{
+    background: url(../img/mapa.PNG) ;
+    width: 100%;
+    height: 500px;
+    position: relative;
+    left: 50px;
+}
+
+#local{
+    background: #f3f3f3;
+    padding-bottom:300px ;
+    display:flex ;
+    justify-content: center;
+}
+.wrapper{
+    width: 50%;
+    margin-left: 100px;
+    padding-top: 150px;
+}
+
+/*CONTACTOS BG*/
+
+
+#bg-contacto{
+    position: relative;
+    top: -130px;
+}
+#seccion-contacto{
+    background-color:#1b2a4e ;
+    min-height: 500px;
+    position: relative;
+    
+}
+
+/*Form*/
+#contenedor-form{
+    position: absolute;
+    top:-20%;
+    left:40%;
+    transform: translate(-50, -50);
+    background:#fbfafa;
+    border-radius: 5px;
+    max-width: 400px;
+    
+}
+#titulo-form{
+    color: #3f3f3f;
+}
+
+footer{
+    background: #1b2a4e;
+    min-height: 100px;
+}
+footer p{
+    color: #f3f3f3;
+    text-align: center;
+
+}
+#iconos i{
+    font-size: 26px;
+    padding:0 8px;
+    color: #f3f3f3;
+}
+
+
+/*PANTALLA ANCHA*/
+@media (max-width:1200px){
+    #local{
+        flex-wrap: wrap;
+        padding-top: 30px;
+    }
+    .wrapper{
+        width: 90%;
+        margin:auto;
+        padding-top: 50px;
+
+    }
+}
+
+
+
+
+/*PANTALLA SM*/
+@media (max-width:768px) {
+    #intro, #equipo{
+        width:90% !important;
+    }
+    .servicio-fila{
+        width: 100% !important;
+        text-align: center;
+    }
+
+    #equipo p {
+        display: none;
+    }
+    #bg-contacto{
+        
+        top: -110px;
+    }
+}
+
+
+
+/*PANTALLA EXTRA-SM*/
+@media (max-width:576px){
+    .icono-wrap{
+        flex-wrap: wrap;
+        justify-content: center !important;
+    }
+}
+
